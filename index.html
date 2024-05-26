@@ -64,7 +64,9 @@ polygonSeries.mapPolygons.template.states.create("hover", {
 
 // Create series for background fill
 // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/#Background_polygon
-var backgroundSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
+var backgroundSeries = chart.series.unshift(
+  am5map.MapPolygonSeries.new(root, {})
+);
   
 backgroundSeries.mapPolygons.template.setAll({
   fill: am5.color(0xd4f1f9),

@@ -7,20 +7,6 @@
 <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
 <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 
-
-<script src="https://d3js.org/d3-array.v1.min.js"></script>
-<script src="https://d3js.org/d3-geo.v1.min.js"></script>
-<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-
-<div class="tools">
-  <input id="selector-prev" type="button" value="&lt;" onclick="setIndex(-1);" disabled="disabled" />
-  <select id="selector" onchange="setProjection(this.options[this.selectedIndex].value);">
-    <option value="geoOrthographic">d3.geoOrthographic()</option>
-   </select>
-  <input id="selector-next" type="button" value="&gt;" onclick="setIndex(1);" />
-</div>
-
-
 <div id="chartdiv"></div>
 
 </body>

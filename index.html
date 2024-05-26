@@ -5,7 +5,7 @@
 <style>
 #chartdiv {
   width: 100%;
-  height: 250px;
+  height: 500px;
   max-width: 100%;
 }
 </style>
@@ -66,7 +66,7 @@ polygonSeries.mapPolygons.template.states.create("hover", {
 // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/#Background_polygon
 chart.chartContainer.set("background", am5.Rectangle.new(root, {
   fill: am5.color(0xffffff),
-  fillOpacity: 1
+  fillOpacity: 0.05
 }));
 
 var backgroundSeries = chart.series.unshift(

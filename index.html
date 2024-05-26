@@ -65,8 +65,8 @@ polygonSeries.mapPolygons.template.states.create("hover", {
 // Create series for background fill
 // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/#Background_polygon
 chart.chartContainer.set("background", am5.Rectangle.new(root, {
-  fill: am5.color(0x000000),
-  fillOpacity: 0
+  fill: am5.color(0xffffff),
+  fillOpacity: 1
 }));
 
 var backgroundSeries = chart.series.unshift(
@@ -77,7 +77,7 @@ backgroundSeries.mapPolygons.template.setAll({
   fill: am5.color(0xd4f1f9),
   stroke: am5.color(0xd4f1f9),
   fillOpacity: 1,
-  strokeOpacity: 1
+  strokeOpacity: 0.5
 });
 backgroundSeries.data.push({
   geometry: am5map.getGeoRectangle(90, 180, -90, -180)

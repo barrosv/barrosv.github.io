@@ -38,10 +38,10 @@ var chart = root.container.children.push(am5map.MapChart.new(root, {
   panX: "rotateX",
   panY: "rotateY",
   projection: am5map.geoOrthographic(),
-  paddingBottom: 1,
-  paddingTop: 1,
-  paddingLeft: 5,
-  paddingRight: 5
+  paddingBottom: 0,
+  paddingTop: 0,
+  paddingLeft: 0,
+  paddingRight: 0
 }));
 
 
@@ -54,7 +54,7 @@ var polygonSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
 polygonSeries.mapPolygons.template.setAll({
   tooltipText: "{name}",
   toggleKey: "active",
-  interactive: true
+  interactive: false
 });
 
 polygonSeries.mapPolygons.template.states.create("hover", {
@@ -67,7 +67,7 @@ polygonSeries.mapPolygons.template.states.create("hover", {
 var backgroundSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
 backgroundSeries.mapPolygons.template.setAll({
   fill: root.interfaceColors.get("background"),
-  fillOpacity: 0.01,
+  fillOpacity: 0,
   strokeOpacity: 0
 });
 backgroundSeries.data.push({

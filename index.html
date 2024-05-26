@@ -66,8 +66,8 @@ polygonSeries.mapPolygons.template.states.create("hover", {
 // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/#Background_polygon
 var backgroundSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
 backgroundSeries.mapPolygons.template.setAll({
-  fill: root.interfaceColors.get("alternativeBackground"),
-  fillOpacity: 0.05,
+  fill: root.interfaceColors.get("background"),
+  fillOpacity: 0.01,
   strokeOpacity: 0
 });
 backgroundSeries.data.push({
